@@ -20,7 +20,6 @@ export default function Home() {
     }
   };
 
-
   return (
     <div style={{ padding: '20px', maxWidth: '600px', margin: '0 auto' }}>
       <h1>Incubyte Assignment - String Calculator</h1>
