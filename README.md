@@ -1,36 +1,42 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+This repository contains the implementation of the String Calculator using Next.js. The project demonstrates Test-Driven Development (TDD) principles by developing a simple string calculator incrementally.
 
-## Getting Started
+# Getting Started
+Follow these instructions to set up the project locally and run it.
 
-First, run the development server:
+# Prerequisites
+Ensure you have the following installed on your system:
 
-```bash
+Node.js (version 14.x or later)
+npm (version 6.x or later) or yarn (version 1.22.x or later)
+
+# Installation
+
+## Clone the repository:
+git clone https://github.com/your-username/incubyte-assignment.git
+cd incubyte-assignment
+
+## Install dependencies:
+npm install
+
+## Running the Development Server
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+Redirect to localHost 3000 and the user can test
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## To run tests in watch mode:
+npm run test:watch
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+# String Calculator Requirements
 
-## Learn More
+1.The method add(numbers) should take a string of comma-separated numbers and return their sum.
+2.Handle an empty string, returning 0.
+3.Handle a single number, returning the number itself.
+4.Handle two numbers, returning their sum.
+5.Handle multiple numbers, returning their sum.
+6.Handle new lines as delimiters.
+7.Support different delimiters specified at the start of the string in the format //[delimiter]\n[numbers...].
+8.Throw an exception for negative numbers, showing all negative numbers in the exception message.
 
-To learn more about Next.js, take a look at the following resources:
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+## User Interface
+The user interface allows you to input a string of numbers and get the sum. It displays the result or any errors (such as negative numbers) below the form.
